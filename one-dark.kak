@@ -2,7 +2,7 @@
 
 evaluate-commands %sh{
     black="rgb:282c34"
-    grey="rgb:353a45"
+    grey="rgb:373d48"
     white="rgb:abb2bf"
     lightred="rgb:e06c75"
     darkred="rgb:be5046"
@@ -13,7 +13,7 @@ evaluate-commands %sh{
     magenta="rgb:c678dd"
     cyan="rgb:56b6c2"
     guttergrey="rgb:4b5263"
-    commentgrey="rgb:5c6370"
+    commentgrey="rgb:70798a"
     selection="rgba:5c8ec7"
     eolselection="rgba:ff8ec7"
     matchingselection="rgba:d8e06c40"
@@ -31,7 +31,7 @@ evaluate-commands %sh{
         face global attribute $magenta
         face global comment $commentgrey
         face global documentation comment
-        face global meta $red
+        face global meta $lightred
         face global builtin $lightyellow
 
 	# Markdown highlighting

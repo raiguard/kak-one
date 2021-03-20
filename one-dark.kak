@@ -19,7 +19,7 @@ evaluate-commands %sh{
     matchingselection="rgba:d8e06c40"
 
     echo "
-    	# Code highlighting
+        # Code highlighting
         face global value $darkyellow
         face global type  $lightyellow
         face global variable $lightred
@@ -34,7 +34,7 @@ evaluate-commands %sh{
         face global meta $lightred
         face global builtin $lightyellow
 
-	# Markdown highlighting
+        # Markdown highlighting
         face global title $darkyellow
         face global header $green
         face global mono $cyan
@@ -43,7 +43,7 @@ evaluate-commands %sh{
         face global bullet $lightyellow
         face global list $white
 
-	# Builtin
+        # Builtin
         face global Default $white,$black
         face global PrimarySelection default,${selection}80
         face global SecondarySelection default,${selection}40
@@ -69,9 +69,10 @@ evaluate-commands %sh{
         face global BufferPadding $grey
         face global Whitespace $commentgrey
 
+
         # kak-lsp
-	face global InlayHint $commentgrey
-	face global parameter 'rgb:d48d5b'
-	face global enum $cyan
+        face global InlayHint $commentgrey
+        face global parameter $lightred+u
+        face global enum $cyan
     "
 }

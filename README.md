@@ -4,6 +4,18 @@
 
 Includes an additional `One Darker` colorscheme, which is a personalized flavor of `One Dark` with readability improvements and some syntax changes.
 
+## Installation
+
+With [plug.kak](https://github.com/andreyorst/plug.kak):
+
+```
+plug "raiguard/one.kak" theme
+```
+
+You can also manually put the colorscheme file(s) in your `.config/kak/colors` directory.
+
+Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
+
 ## Plugin support
 
 `one.kak` includes colors for the following plugins:

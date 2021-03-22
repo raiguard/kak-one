@@ -5,14 +5,14 @@ evaluate-commands %sh{
     bg="rgb:fafafa"
     subbg="rgb:e6e6e6"
 
-    lightred="rgb:e1524c"
-    darkred="rgb:c60046"
-    green="rgb:539f52"
-    lightorange="rgb:be811b"
-    darkorange="rgb:956615"
-    blue="rgb:497bf0"
-    magenta="rgb:a42ba1"
-    cyan="rgb:1f84bb"
+    lightred="rgb:e45649"
+    darkred="rgb:ca1243"
+    green="rgb:50a14f"
+    lightorange="rgb:986801"
+    darkorange="rgb:c18401"
+    blue="rgb:4078f2"
+    magenta="rgb:a626a4"
+    cyan="rgb:0184bc"
 
     gutter="rgb:9e9e9e"
     comment="rgb:a0a1a7"
@@ -81,7 +81,7 @@ evaluate-commands %sh{
         face global StatusCursor default,$cursorbg
         face global Prompt $blue
         face global MatchingChar default,$matchingselectionbg
-        face global BufferPadding $subbg
+        face global BufferPadding $fg,$bg
         face global Whitespace $comment
 
         # Plugins

@@ -73,7 +73,7 @@ evaluate-commands %sh{
         face global MenuBackground $fg,$subbg
         face global MenuInfo $green
         face global Information $fg,$subbg
-        face global Error $lightred
+        face global Error $darkred
         face global StatusLine $fg,$subbg
         face global StatusLineMode $darkorange
         face global StatusLineInfo $blue

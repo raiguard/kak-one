@@ -24,6 +24,7 @@ Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
     - Parameters are underlined
     - Inlay hints are colored as comments
     - Enums are cyan
+    - These features require configuring your `kak-lsp.toml` to display semantic tokens
 - [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)
     - Phantom selections use the secondary selection color, and add an underline
 

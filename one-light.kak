@@ -60,12 +60,12 @@ evaluate-commands %sh{
 
         # Builtin
         face global Default $fg,$bg
-        face global PrimarySelection default,${selectionbg}
-        face global SecondarySelection default,${secondaryselectionbg}
-        face global PrimaryCursor default,${cursorbg}
-        face global SecondaryCursor default,${secondarycursorbg}
-        face global PrimaryCursorEol default,${eolcursorbg}
-        face global SecondaryCursorEol default,${secondaryeolcursorbg}
+        face global PrimarySelection default,$selectionbg
+        face global SecondarySelection default,$secondaryselectionbg
+        face global PrimaryCursor default,$cursorbg
+        face global SecondaryCursor default,$secondarycursorbg
+        face global PrimaryCursorEol default,$eolcursorbg
+        face global SecondaryCursorEol default,$secondaryeolcursorbg
         face global LineNumbers $gutter
         face global LineNumberCursor $darkorange
         face global LineNumbersWrapped $bg,$bg
@@ -78,16 +78,19 @@ evaluate-commands %sh{
         face global StatusLineMode $darkorange
         face global StatusLineInfo $blue
         face global StatusLineValue $fg
-        face global StatusCursor default,${cursorbg}
+        face global StatusCursor default,$cursorbg
         face global Prompt $blue
-        face global MatchingChar default,${matchingselectionbg}
+        face global MatchingChar default,$matchingselectionbg
         face global BufferPadding $subbg
         face global Whitespace $comment
 
+        # Plugins
 
         # kak-lsp
         face global InlayHint $comment
         face global parameter $lightred+u
         face global enum $cyan
+        # kakoune-phantom-selection
+        face global PhantomSelection default,$secondaryselectionbg+u
     "
 }

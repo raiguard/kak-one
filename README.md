@@ -9,9 +9,13 @@ Includes an additional `One Darker` colorscheme, which is a personalized flavor 
 `one.kak` includes colors for the following plugins:
 
 - [kak-lsp](https://github.com/kak-lsp/kak-lsp)
+    - Parameters are underlined
+    - Inlay hints are colored as comments
+    - Enums are cyan
 - [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)
+    - Phantom selections use the secondary selection color, and add an underline
 
-## Screenshots
+## Scheme screenshots
 
 ### One Light
 
@@ -32,3 +36,17 @@ Changes in `One Darker` over `One Dark` are:
 - Operators are red instead of white
 - Comments are more visible
 - Semantic parameters are a unique orange color instead of being underlined
+
+## Feature screenshots
+
+### Alpha-blended selections
+
+![](screenshots/alpha-blended-selections.png)
+
+### Obvious secondary selections
+
+![](screenshots/secondary-selections.png)
+
+### Phantom selections plugin
+
+![](screenshots/phantom-selections.png)

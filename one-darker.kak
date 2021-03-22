@@ -42,7 +42,7 @@ evaluate-commands %sh{
     echo "
         # Code highlighting
         face global value $darkorange
-        face global type  $lightorange
+        face global type $lightorange
         face global variable $fg
         face global module $lightorange
         face global function $blue
@@ -52,7 +52,7 @@ evaluate-commands %sh{
         face global attribute $magenta
         face global comment $comment
         face global documentation $comment
-        face global meta $white
+        face global meta $fg
         face global builtin $lightorange
 
         # Markdown highlighting
@@ -87,7 +87,7 @@ evaluate-commands %sh{
         face global StatusCursor default,$cursorbg
         face global Prompt $blue
         face global MatchingChar default,$matchingselectionbg
-        face global BufferPadding $subbg
+        face global BufferPadding $fg,$bg
         face global Whitespace $comment
 
         # Plugins

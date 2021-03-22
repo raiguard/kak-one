@@ -81,7 +81,7 @@ evaluate-commands %sh{
         face global StatusCursor default,$cursorbg
         face global Prompt $blue
         face global MatchingChar default,$matchingselectionbg
-        face global BufferPadding $subbg
+        face global BufferPadding $fg,$bg
         face global Whitespace $comment
 
         # Plugins

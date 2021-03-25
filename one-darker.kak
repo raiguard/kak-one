@@ -91,6 +91,9 @@ evaluate-commands %sh{
         face global BufferPadding $fg,$bg
         face global Whitespace $comment
 
+        #Custom
+        face global Ruler default,$subbg
+
         # Plugins
 
         # kak-lsp

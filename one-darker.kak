@@ -27,7 +27,7 @@ evaluate-commands %sh{
     cursoralpha="80"
     selectionalpha="40"
 
-    # This has to be hardcoded because menus don't support alpha
+    # Menus do not support transparency, so we must hardcode the selection + sub bg colors
     menuselection="344b61"
 
     echo "

@@ -24,21 +24,19 @@ evaluate-commands %sh{
     gutter="rgb:636d83"
     comment="rgb:70798a"
 
-    selection="rgba:5c8ec7"
-    secondaryselection="rgba:5bc764"
-    eolselection="rgba:ff8ec7"
-    matchingselection="rgba:d9b077"
+    selection="rgba:61afef" # Blue
+    secondaryselection="rgba:98c379" # Green
+    eolselection="rgba:e06c75" # Light red
 
-    selectionbg=${selection}50
-    secondaryselectionbg=${secondaryselection}50
-    matchingselectionbg=${matchingselection}50
+    selectionbg=${selection}40
+    secondaryselectionbg=${secondaryselection}40
     # Menus do not support transparency, so we must hardcode the selection + sub bg colors
-    menuselectionbg="rgb:41546e"
+    menuselectionbg="rgb:344b61"
 
-    cursorbg=${selection}a0
-    secondarycursorbg=${secondaryselection}a0
-    eolcursorbg=${eolselection}a0
-    secondaryeolcursorbg=${eolselection}80
+    cursorbg=${selection}80
+    secondarycursorbg=${secondaryselection}80
+    eolcursorbg=${eolselection}80
+    secondaryeolcursorbg=${eolselection}60
 
     echo "
         # Code highlighting
@@ -87,7 +85,7 @@ evaluate-commands %sh{
         face global StatusLineValue $fg
         face global StatusCursor default,$cursorbg
         face global Prompt $blue
-        face global MatchingChar default,$matchingselectionbg
+        face global MatchingChar default+bu
         face global BufferPadding $fg,$bg
         face global Whitespace $comment
 

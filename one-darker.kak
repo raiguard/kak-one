@@ -100,13 +100,6 @@ evaluate-commands %sh{
         face global InlayHint $comment
         face global parameter 'rgb:d48d5b'
         face global enum $cyan
-        # TODO: these don't appear to take effect because they run before lsp-enable-window?
-        face global DiagnosticError $darkred
-        face global DiagnosticError $darkred
-        face global InlayDiagnosticError $darkred
-        face global InlayDiagnosticError $darkred
-        face global LineFlagErrors $darkred
-        face global LineFlagWarnings DiagnosticWarning
         # kakoune-phantom-selection
         face global PhantomSelection default,$secondaryselectionbg+u
     "

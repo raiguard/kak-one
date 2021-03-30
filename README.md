@@ -16,17 +16,20 @@ You can also manually put the colorscheme file(s) in your `.config/kak/colors` d
 
 Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
 
+For kak-lsp features to work properly, specify the colorscheme as the _last_ thing in your `kakrc`.
+
 ## Plugin support
 
 `one.kak` includes colors for the following plugins:
 
 - [kak-lsp](https://github.com/kak-lsp/kak-lsp)
-    - Parameters are underlined
+    - Parameters are italicized (`parameter` face)
     - Inlay hints are colored as comments
-    - Enums are cyan
-    - These features require configuring your `kak-lsp.toml` to display semantic tokens
+    - Enums are cyan (`enum` face)
+    - Errors and warnings are highlighted red and orange, respectively
+    - Other references to the current symbol are bolded and underlined
 - [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)
-    - Phantom selections use the secondary selection color, and add an underline
+    - Phantom selections are highlighted magenta and italicized
 
 ## Scheme screenshots
 
@@ -48,7 +51,7 @@ Changes in `One Darker` over `One Dark` are:
 - Variables are white instead of red
 - Operators are red instead of white
 - Comments are more visible
-- Semantic parameters are a unique orange color instead of being underlined
+- Semantic parameters are a unique orange color instead of being italicized
 
 ## Feature screenshots
 
@@ -56,10 +59,10 @@ Changes in `One Darker` over `One Dark` are:
 
 ![](screenshots/alpha-blended-selections.png)
 
-### Obvious secondary selections
+### Secondary and phantom selections
 
-![](screenshots/secondary-selections.png)
+![](screenshots/phantom-and-secondary-selections.png)
 
-### Phantom selections plugin
+### kak-lsp diagnostics
 
-![](screenshots/phantom-selections.png)
+![](screenshots/kak-lsp.png)

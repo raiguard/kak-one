@@ -90,6 +90,12 @@ evaluate-commands %sh{
         face global InlayHint rgb:$comment
         face global parameter rgb:d48d5b
         face global enum rgb:$cyan
+        face global DiagnosticError default,rgba:$darkred$selectionalpha
+        face global DiagnosticWarning default,rgba:$darkorange$selectionalpha
+        face global InlayDiagnosticError rgb:$darkred
+        face global InlayDiagnosticWarning rgb:$darkorange
+        face global LineFlagErrors rgb:$darkred
+        face global LineFlagWarnings rgb:$darkorange
         # kakoune-phantom-selection
         face global PhantomSelection default,rgba:$magenta$selectionalpha+i
     "

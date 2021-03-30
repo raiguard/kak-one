@@ -81,7 +81,7 @@ evaluate-commands %sh{
 
         # kak-lsp
         face global InlayHint rgb:$comment
-        face global parameter rgb:$lightred+u
+        face global parameter rgb:$lightred+i
         face global enum rgb:$cyan
         # kakoune-phantom-selection
         face global PhantomSelection default,rgba:$magenta$selectionalpha+i

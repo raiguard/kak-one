@@ -97,6 +97,6 @@ evaluate-commands %sh{
         face global LineFlagErrors rgb:$darkred
         face global LineFlagWarnings rgb:$darkorange
         # kakoune-phantom-selection
-        face global PhantomSelection default,rgba:$magenta$selectionalpha+i
+        face global PhantomSelection default,rgba:$magenta$selectionalpha
     "
 }

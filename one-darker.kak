@@ -5,7 +5,6 @@
 # - Variables are white instead of red
 # - Operators are red instead of white
 # - Comments are more visible
-# - Semantic parameters are a unique orange color instead of being italicized
 
 # COLORS
 
@@ -104,4 +103,6 @@ face global LineFlagWarnings "rgb:%opt{darkorange}"
 face global PhantomSelection "default,rgba:%opt{magenta}%opt{selectionalpha}"
 # phantom.kak
 face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"
+# search-highlighter.kak
+face global Search "default,rgba:%opt{cyan}%opt{selectionalpha}"
 

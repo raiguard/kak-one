@@ -26,12 +26,12 @@ decl -hidden str menuselection "405770"
 
 face global value "rgb:%opt{darkorange}"
 face global type "rgb:%opt{lightorange}"
-face global variable "rgb:%opt{fg}"
+face global variable "rgb:%opt{lightred}"
 face global module "rgb:%opt{lightorange}"
 face global function "rgb:%opt{blue}"
 face global string "rgb:%opt{green}"
 face global keyword "rgb:%opt{magenta}"
-face global operator "rgb:%opt{lightred}"
+face global operator "rgb:%opt{fg}"
 face global attribute "rgb:%opt{magenta}"
 face global comment "rgb:%opt{comment}"
 face global documentation "rgb:%opt{comment}"
@@ -83,7 +83,7 @@ face global Ruler "default,rgb:%opt{subbg}"
 
 # kak-lsp
 face global InlayHint "rgb:%opt{comment}"
-face global parameter "rgb:%opt{fg}+i"
+face global parameter "rgb:%opt{lightred}+i"
 face global enum "rgb:%opt{cyan}"
 face global DiagnosticError "default,rgba:%opt{darkred}%opt{selectionalpha}"
 face global DiagnosticWarning "default,rgba:%opt{darkorange}%opt{selectionalpha}"
@@ -95,4 +95,5 @@ face global LineFlagWarnings "rgb:%opt{darkorange}"
 face global PhantomSelection "default,rgba:%opt{magenta}%opt{selectionalpha}"
 # phantom.kak
 face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"
-
+# search-highlighter.kak
+face global Search "default,rgba:%opt{cyan}%opt{selectionalpha}"

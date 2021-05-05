@@ -1,95 +1,97 @@
 # One Dark
 
-evaluate-commands %sh{
-    fg="abb2bf"
-    bg="282c34"
-    subbg="373c47"
+decl -hidden str fg "abb2bf"
+decl -hidden str bg "282c34"
+decl -hidden str subbg "373c47"
 
-    lightred="e06c75"
-    darkred="be5046"
-    green="98c379"
-    lightorange="e5c07b"
-    darkorange="d19a66"
-    blue="61afef"
-    magenta="c678dd"
-    cyan="56b6c2"
+decl -hidden str lightred "e06c75"
+decl -hidden str darkred "be5046"
+decl -hidden str green "98c379"
+decl -hidden str lightorange "e5c07b"
+decl -hidden str darkorange "d19a66"
+decl -hidden str blue "61afef"
+decl -hidden str magenta "c678dd"
+decl -hidden str cyan "56b6c2"
 
-    gutter="636d83"
-    comment="5c6370"
+decl -hidden str gutter "636d83"
+decl -hidden str comment "5c6370"
 
-    cursoralpha="80"
-    selectionalpha="40"
+decl -hidden str cursoralpha "80"
+decl -hidden str selectionalpha "40"
 
-    # Menus do not support transparency, so we must hardcode the selection + sub bg colors
-    menuselection="405770"
+# Menus do not support transparency, so we must hardcode the selection + sub bg colors
+decl -hidden str menuselection "405770"
 
-    echo "
-        # Code highlighting
-        face global value rgb:$darkorange
-        face global type rgb:$lightorange
-        face global variable rgb:$lightred
-        face global module rgb:$lightorange
-        face global function rgb:$blue
-        face global string rgb:$green
-        face global keyword rgb:$magenta
-        face global operator rgb:$fg
-        face global attribute rgb:$magenta
-        face global comment rgb:$comment
-        face global documentation rgb:$comment
-        face global meta rgb:$lightred
-        face global builtin rgb:$lightorange
+# CODE
 
-        # Markdown highlighting
-        face global title rgb:$darkorange
-        face global header rgb:$green
-        face global mono rgb:$cyan
-        face global block rgb:$magenta
-        face global link rgb:$blue
-        face global bullet rgb:$lightorange
-        face global list rgb:$fg
+face global value "rgb:%opt{darkorange}"
+face global type "rgb:%opt{lightorange}"
+face global variable "rgb:%opt{fg}"
+face global module "rgb:%opt{lightorange}"
+face global function "rgb:%opt{blue}"
+face global string "rgb:%opt{green}"
+face global keyword "rgb:%opt{magenta}"
+face global operator "rgb:%opt{lightred}"
+face global attribute "rgb:%opt{magenta}"
+face global comment "rgb:%opt{comment}"
+face global documentation "rgb:%opt{comment}"
+face global meta "rgb:%opt{fg}"
+face global builtin "rgb:%opt{lightorange}"
 
-        # Builtin
-        face global Default rgb:$fg,rgb:$bg
-        face global PrimarySelection default,rgba:$blue$selectionalpha
-        face global SecondarySelection default,rgba:$green$selectionalpha
-        face global PrimaryCursor default,rgba:$blue$cursoralpha
-        face global SecondaryCursor default,rgba:$green$cursoralpha
-        face global PrimaryCursorEol default,rgba:$lightred$cursoralpha
-        face global SecondaryCursorEol default,rgba:$darkorange$cursoralpha
-        face global LineNumbers rgb:$gutter
-        face global LineNumberCursor rgb:$darkorange
-        face global LineNumbersWrapped rgb:$bg,rgb:$bg
-        face global MenuForeground rgb:$fg,rgb:$menuselection
-        face global MenuBackground rgb:$fg,rgb:$subbg
-        face global MenuInfo rgb:$green
-        face global Information rgb:$fg,rgb:$subbg
-        face global Error rgb:$darkred
-        face global StatusLine rgb:$fg,rgb:$subbg
-        face global StatusLineMode rgb:$darkorange
-        face global StatusLineInfo rgb:$blue
-        face global StatusLineValue rgb:$fg
-        face global StatusCursor default,rgba:$blue$cursoralpha
-        face global Prompt rgb:$blue
-        face global MatchingChar default+bu
-        face global BufferPadding rgb:$fg,rgb:$bg
-        face global Whitespace rgb:$comment
+# MARKUP
 
-        # Custom
-        face global Ruler default,rgb:$subbg
+face global title "rgb:%opt{darkorange}"
+face global header "rgb:%opt{green}"
+face global mono "rgb:%opt{cyan}"
+face global block "rgb:%opt{magenta}"
+face global link "rgb:%opt{blue}"
+face global bullet "rgb:%opt{lightorange}"
+face global list "rgb:%opt{fg}"
 
-        # Plugins
+# BUILTIN
 
-        # kak-lsp
-        face global InlayHint rgb:$comment
-        face global parameter rgb:$lightred+i
-        face global enum rgb:$cyan
-        face global DiagnosticError default,rgba:$darkred$selectionalpha
-        face global DiagnosticWarning default,rgba:$darkorange$selectionalpha
-        face global InlayDiagnosticError rgb:$darkred
-        face global InlayDiagnosticWarning rgb:$darkorange
-        face global LineFlagErrors rgb:$darkred
-        face global LineFlagWarnings rgb:$darkorange
-        # kakoune-phantom-selection
-        face global PhantomSelection default,rgba:$magenta$selectionalpha
-    "
-}
+face global Default "rgb:%opt{fg},rgb:%opt{bg}"
+face global PrimarySelection "default,rgba:%opt{blue}%opt{selectionalpha}"
+face global SecondarySelection "default,rgba:%opt{green}%opt{selectionalpha}"
+face global PrimaryCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
+face global SecondaryCursor "default,rgba:%opt{green}%opt{cursoralpha}"
+face global PrimaryCursorEol "default,rgba:%opt{lightred}%opt{cursoralpha}"
+face global SecondaryCursorEol "default,rgba:%opt{darkorange}%opt{cursoralpha}"
+face global LineNumbers "rgb:%opt{gutter}"
+face global LineNumberCursor "rgb:%opt{darkorange}"
+face global LineNumbersWrapped "rgb:%opt{bg},rgb:%opt{bg}"
+face global MenuForeground "rgb:%opt{fg},rgb:%opt{menuselection}"
+face global MenuBackground "rgb:%opt{fg},rgb:%opt{subbg}"
+face global MenuInfo "rgb:%opt{green}"
+face global Information "rgb:%opt{fg},rgb:%opt{subbg}"
+face global Error "rgb:%opt{darkred}"
+face global StatusLine "rgb:%opt{fg},rgb:%opt{subbg}"
+face global StatusLineMode "rgb:%opt{darkorange}"
+face global StatusLineInfo "rgb:%opt{blue}"
+face global StatusLineValue "rgb:%opt{fg}"
+face global StatusCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
+face global Prompt "rgb:%opt{blue}"
+face global MatchingChar "default+bu"
+face global BufferPadding "rgb:%opt{fg},rgb:%opt{bg}"
+face global Whitespace "rgb:%opt{comment}"
+
+# CUSTOM
+
+face global Ruler "default,rgb:%opt{subbg}"
+
+# PLUGINS
+
+# kak-lsp
+face global InlayHint "rgb:%opt{comment}"
+face global parameter "rgb:%opt{fg}+i"
+face global enum "rgb:%opt{cyan}"
+face global DiagnosticError "default,rgba:%opt{darkred}%opt{selectionalpha}"
+face global DiagnosticWarning "default,rgba:%opt{darkorange}%opt{selectionalpha}"
+face global InlayDiagnosticError "rgb:%opt{darkred}"
+face global InlayDiagnosticWarning "rgb:%opt{darkorange}"
+face global LineFlagErrors "rgb:%opt{darkred}"
+face global LineFlagWarnings "rgb:%opt{darkorange}"
+# kakoune-phantom-selection
+face global PhantomSelection "default,rgba:%opt{magenta}%opt{selectionalpha}"
+face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"
+

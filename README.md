@@ -51,7 +51,6 @@ Changes in `One Darker` over `One Dark` are:
 - Variables are white instead of red
 - Operators are red instead of white
 - Comments are more visible
-- Semantic parameters are a unique orange color instead of being italicized
 
 ## Feature screenshots
 

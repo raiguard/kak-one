@@ -93,5 +93,6 @@ face global LineFlagErrors "rgb:%opt{darkred}"
 face global LineFlagWarnings "rgb:%opt{darkorange}"
 # kakoune-phantom-selection
 face global PhantomSelection "default,rgba:%opt{magenta}%opt{selectionalpha}"
+# phantom.kak
 face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"
 

@@ -81,7 +81,7 @@ face global StatusCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
 face global Prompt "rgb:%opt{blue}"
 face global MatchingChar "default+bu"
 face global BufferPadding "rgb:%opt{fg},rgb:%opt{bg}"
-face global Whitespace "rgb:%opt{comment}"
+face global Whitespace "rgb:%opt{gutter}"
 
 # CUSTOM
 

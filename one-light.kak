@@ -88,13 +88,11 @@ face global enum "rgb:%opt{cyan}"
 # These make it too hard to read the code sometimes
 # face global DiagnosticError "default,rgba:%opt{darkred}%opt{selectionalpha}"
 # face global DiagnosticWarning "default,rgba:%opt{darkorange}%opt{selectionalpha}"
-face global DiagnosticWarning "default+u"
 face global DiagnosticError "default+u"
+face global DiagnosticWarning "default+u"
 face global InlayDiagnosticError "rgb:%opt{darkred}"
 face global InlayDiagnosticWarning "rgb:%opt{darkorange}"
 face global LineFlagErrors "rgb:%opt{darkred}"
 face global LineFlagWarnings "rgb:%opt{darkorange}"
-# kakoune-phantom-selection
-face global PhantomSelection "default,rgba:%opt{magenta}%opt{selectionalpha}"
 # phantom.kak
 face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"

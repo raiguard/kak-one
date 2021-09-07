@@ -4,6 +4,8 @@
 
 Includes an additional `One Darker` colorscheme, which is a personalized flavor of `One Dark` with readability improvements and some syntax changes.
 
+Includes optional faces for colored curly underlines. This features requires building kakoune manually, as there is not yet an official release supporting this feature. This feature may not work on all terminal emulators.
+
 ## Installation
 
 With [plug.kak](https://github.com/andreyorst/plug.kak):
@@ -16,22 +18,22 @@ You can also manually put the colorscheme file(s) in your `.config/kak/colors` d
 
 Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
 
-For kak-lsp features to work properly, specify the colorscheme as the _last_ thing in your `kakrc`.
-
 ## Plugin support
 
 `one.kak` includes colors for the following plugins:
 
 - [kak-lsp](https://github.com/kak-lsp/kak-lsp)
-    - Parameters are italicized (`parameter` face)
     - Inlay hints are colored as comments
-    - Enums are cyan (`enum` face)
-    - Errors and warnings are highlighted red and orange, respectively
-    - Other references to the current symbol are bolded and underlined
+    - Errors and warnings are underlines in red and orange, respectively (if the terminal emulator supports it, see [kak-lsp diagnostics](kak-lsp diagnostics))
+    - Other references to the current symbol are highlighted in a slightly lighter background color
 - [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)
     - Phantom selections are highlighted magenta and italicized
 
 ## Scheme screenshots
+
+These screenshots include a number of custom semantic highlighting settings, see [my kak-lsp.toml](https://github.com/raiguard/dotfiles/blob/master/.config/kak-lsp/kak-lsp.toml).
+
+These screenshots also include the [kak-rainbower](https://github.com/crizan/kak-rainbower) plugin.
 
 ### One Light
 
@@ -58,10 +60,16 @@ Changes in `One Darker` over `One Dark` are:
 
 ![](screenshots/alpha-blended-selections.png)
 
-### Secondary and phantom selections
+### Obvious secondary selections
 
-![](screenshots/phantom-and-secondary-selections.png)
+![](screenshots/secondary-selections.png)
+
+### [Phantom selections](https://github.com/raiguard/phantom.kak)
+
+![](screenshots/phantom-selections.png)
 
 ### kak-lsp diagnostics
 
 ![](screenshots/kak-lsp.png)
+
+To enable curly underlines, invoke the `one-enable-curly-underlines` command after enabling the colorscheme. Please note that this will not work on all terminal emulators.

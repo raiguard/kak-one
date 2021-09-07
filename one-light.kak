@@ -89,7 +89,13 @@ face global InlayDiagnosticError "rgb:%opt{lightred}"
 face global InlayDiagnosticWarning "rgb:%opt{lightorange}"
 face global LineFlagErrors "rgb:%opt{lightred}"
 face global LineFlagWarnings "rgb:%opt{lightorange}"
+# Not all terminals support curly underlines, so use regular ones by default
 face global DiagnosticError "default+u"
 face global DiagnosticWarning "default+u"
+def one-enable-curly-underlines %{
+    face global DiagnosticError ",,rgb:%opt{lightred}+c"
+    face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
+}
+
 # phantom.kak
 face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"

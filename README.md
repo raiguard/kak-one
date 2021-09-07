@@ -10,11 +10,21 @@ Includes optional faces for colored curly underlines. This features requires bui
 
 With [plug.kak](https://github.com/andreyorst/plug.kak):
 
-```
+```kakounescript
 plug "raiguard/one.kak" theme
 ```
 
 You can also manually put the colorscheme file(s) in your `.config/kak/colors` directory.
+
+## Usage
+
+Enable the desired colorscheme using the `colorscheme` command in your `kakrc`:
+
+```kakounescript
+colorscheme one-darker
+# If you have built kakoune from git, and have a compatible terminal emulator:
+one-enable-curly-underlines
+```
 
 Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
 

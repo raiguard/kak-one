@@ -34,7 +34,7 @@ Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
 
 - [kak-lsp](https://github.com/kak-lsp/kak-lsp)
     - Inlay hints are colored as comments
-    - Errors and warnings are underlines in red and orange, respectively (if the terminal emulator supports it, see [kak-lsp diagnostics](kak-lsp diagnostics))
+    - Errors and warnings are underlines in red and orange, respectively (if the terminal emulator supports it, otherwise underlined normally)
     - Other references to the current symbol are highlighted in a slightly lighter background color
 - [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)
     - Phantom selections are highlighted magenta and italicized

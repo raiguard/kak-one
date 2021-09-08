@@ -47,6 +47,41 @@ Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
 - [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)
     - Phantom selections are highlighted magenta and italicized
 
+## Using scheme constructs in your own scripts
+
+You can use the scheme colors and other properties in your own scripts by using the following options in expansions:
+
+```kakounescript
+addhl global/trailing-whitespaces regex "(\h+)$" "1:default,rgba:%opt{darkred}%opt{selectionalpha}"
+```
+
+### Colors
+
+- `fg`
+- `bg`
+- `subbg`
+
+- `lightred`
+- `darkred`
+- `green`
+- `lightorange`
+- `darkorange`
+- `blue`
+- `magenta`
+- `cyan`
+
+- `gutter`
+- `comment`
+
+### Transparencies
+
+- `cursoralpha`
+- `selectionalpha`
+
+### Other
+
+- `menuselection` (cursor color adjusted for ths `subbg` background, since menus do not support transparency)
+
 ## Scheme screenshots
 
 These screenshots include a number of custom semantic highlighting settings, see [my kak-lsp.toml](https://github.com/raiguard/dotfiles/blob/master/.config/kak-lsp/kak-lsp.toml).

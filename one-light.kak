@@ -87,14 +87,22 @@ face global parameter "rgb:%opt{lightred}+i"
 face global enum "rgb:%opt{cyan}"
 face global InlayDiagnosticError "rgb:%opt{lightred}"
 face global InlayDiagnosticWarning "rgb:%opt{lightorange}"
-face global LineFlagErrors "rgb:%opt{lightred}"
-face global LineFlagWarnings "rgb:%opt{lightorange}"
+face global InlayDiagnosticInfo "rgb:%opt{blue}"
+face global InlayDiagnosticHint "rgb:%opt{cyan}"
+face global LineFlagError "rgb:%opt{lightred}"
+face global LineFlagWarning "rgb:%opt{lightorange}"
+face global LineFlagInfo "rgb:%opt{blue}"
+face global LineFlagHint "rgb:%opt{cyan}"
 # Not all terminals support curly underlines, so use regular ones by default
 face global DiagnosticError "default+u"
 face global DiagnosticWarning "default+u"
-def one-enable-curly-underlines %{
+face global DiagnosticInfo "default+u"
+face global DiagnosticHint "default+u"
+def one-enable-fancy-underlines %{
     face global DiagnosticError ",,rgb:%opt{lightred}+c"
     face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
+    face global DiagnosticInfo ",,rgb:%opt{blue}+c"
+    face global DiagnosticHint ",,rgb:%opt{cyan}+u"
 }
 
 # phantom.kak

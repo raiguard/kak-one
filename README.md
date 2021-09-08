@@ -23,7 +23,7 @@ Enable the desired colorscheme using the `colorscheme` command in your `kakrc`:
 ```kakounescript
 colorscheme one-darker
 # If you have built kakoune from git, and have a compatible terminal emulator:
-one-enable-curly-underlines
+one-enable-fancy-underlines
 ```
 
 Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
@@ -34,7 +34,15 @@ Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
 
 - [kak-lsp](https://github.com/kak-lsp/kak-lsp)
     - Inlay hints are colored as comments
-    - Errors and warnings are underlines in red and orange, respectively (if the terminal emulator supports it, otherwise underlined normally)
+    - Special `enum` and `parameter` faces are provided for semantic highlighting (requires configuration in `kak-lsp.toml`)
+        - `enum` is cyan
+        - `parameter` is italicized
+    - Diagnostics are underlined, inlay diagnostics and diagnostic line flags are colored as thus:
+        - Error: red
+        - Warning: yellow
+        - Info: blue
+        - Hint: cyan
+    - If `one-enable-fancy-underlines` are enabled, diagnostics are underlined in their respective colors using curly underlines
     - Other references to the current symbol are highlighted in a slightly lighter background color
 - [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)
     - Phantom selections are highlighted magenta and italicized
@@ -82,4 +90,4 @@ Changes in `One Darker` over `One Dark` are:
 
 ![](screenshots/kak-lsp.png)
 
-To enable curly underlines, invoke the `one-enable-curly-underlines` command after enabling the colorscheme. Please note that this will not work on all terminal emulators.
+To enable curly underlines, invoke the `one-enable-fancy-underlines` command after enabling the colorscheme. Please note that this will not work on all terminal emulators.

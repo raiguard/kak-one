@@ -104,6 +104,20 @@ def one-enable-curly-underlines %{
     face global DiagnosticError ",,rgb:%opt{lightred}+c"
     face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
 }
+# Infobox faces
+face global InfoDefault "@Information"
+face global InfoBlock "@block"
+face global InfoBlockQuote "@block"
+face global InfoBullet "@bullet"
+face global InfoHeader "@header"
+face global InfoLink "@link"
+face global InfoLinkMono "@header"
+face global InfoMono "@mono"
+face global InfoRule "@comment"
+face global InfoDiagnosticError "@DiagnosticError"
+face global InfoDiagnosticHint "@Information"
+face global InfoDiagnosticInformation "rgb:%opt{blue}"
+face global InfoDiagnosticWarning "@DiagnosticWarning"
 
 # phantom.kak
 face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"

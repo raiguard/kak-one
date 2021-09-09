@@ -75,10 +75,6 @@ face global MatchingChar "default,rgb:%opt{subbg}"
 face global BufferPadding "rgb:%opt{bg},rgb:%opt{bg}"
 face global Whitespace "rgb:%opt{gutter}"
 
-# CUSTOM
-
-face global Ruler "default,rgb:%opt{subbg}"
-
 # PLUGINS
 
 # kak-lsp

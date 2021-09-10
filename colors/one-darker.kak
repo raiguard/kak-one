@@ -102,7 +102,7 @@ face global DiagnosticError "default+u"
 face global DiagnosticWarning "default+u"
 face global DiagnosticInfo "default+u"
 face global DiagnosticHint "default+u"
-def one-enable-fancy-underlines %{
+def -override one-enable-fancy-underlines %{
     face global DiagnosticError ",,rgb:%opt{lightred}+c"
     face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
     face global DiagnosticInfo ",,rgb:%opt{blue}+c"

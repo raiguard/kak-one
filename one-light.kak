@@ -103,3 +103,6 @@ def one-enable-fancy-underlines %{
 
 # phantom.kak
 face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"
+
+# kak-rainbower
+set global rainbow_colors "rgb:daa520" "rgb:9932cc" "rgb:00bfff"

@@ -46,6 +46,9 @@ Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
     - Other references to the current symbol are highlighted in a slightly lighter background color
 - [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)
     - Phantom selections are highlighted magenta and italicized
+- [kak-rainbower](https://github.com/crizan/kak-rainbower)
+    - Brackets are colored gold, magenta, and light blue
+    - `one-light` has darker variations of these colors to improve visibility
 
 ## Using scheme constructs in your own scripts
 

@@ -109,19 +109,19 @@ def -override one-enable-fancy-underlines %{
     face global DiagnosticHint ",,rgb:%opt{cyan}+u"
 }
 # Infobox faces
-face global InfoDefault "@Information"
-face global InfoBlock "@block"
-face global InfoBlockQuote "@block"
-face global InfoBullet "@bullet"
-face global InfoHeader "@header"
-face global InfoLink "@link"
-face global InfoLinkMono "@header"
-face global InfoMono "@mono"
-face global InfoRule "@comment"
-face global InfoDiagnosticError "@DiagnosticError"
-face global InfoDiagnosticHint "@Information"
-face global InfoDiagnosticInformation "rgb:%opt{blue}"
-face global InfoDiagnosticWarning "@DiagnosticWarning"
+face global InfoDefault Information
+face global InfoBlock block
+face global InfoBlockQuote block
+face global InfoBullet bullet
+face global InfoHeader header
+face global InfoLink link
+face global InfoLinkMono header
+face global InfoMono mono
+face global InfoRule comment
+face global InfoDiagnosticError InlayDiagnosticError
+face global InfoDiagnosticHint InlayDiagnosticHint
+face global InfoDiagnosticInformation InlayDiagnosticInfo
+face global InfoDiagnosticWarning InlayDiagnosticWarning
 
 # phantom.kak
 face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"

@@ -33,6 +33,7 @@ Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
 `one.kak` includes colors for the following plugins:
 
 - [kak-lsp](https://github.com/kak-lsp/kak-lsp)
+    - LSP info boxes are syntax highlighted
     - Inlay hints are colored as comments
     - Special `enum` and `parameter` faces are provided for semantic highlighting (requires configuration in `kak-lsp.toml`)
         - `enum` is cyan

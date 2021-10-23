@@ -1,26 +1,26 @@
 # One Dark
 
-decl -hidden str fg "abb2bf"
-decl -hidden str bg "282c34"
-decl -hidden str subbg "373c47"
+decl str fg "abb2bf"
+decl str bg "282c34"
+decl str subbg "373c47"
 
-decl -hidden str lightred "e06c75"
-decl -hidden str darkred "be5046"
-decl -hidden str green "98c379"
-decl -hidden str lightorange "e5c07b"
-decl -hidden str darkorange "d19a66"
-decl -hidden str blue "61afef"
-decl -hidden str magenta "c678dd"
-decl -hidden str cyan "56b6c2"
+decl str lightred "e06c75"
+decl str darkred "be5046"
+decl str green "98c379"
+decl str lightorange "e5c07b"
+decl str darkorange "d19a66"
+decl str blue "61afef"
+decl str magenta "c678dd"
+decl str cyan "56b6c2"
 
-decl -hidden str gutter "636d83"
-decl -hidden str comment "5c6370"
+decl str gutter "636d83"
+decl str comment "5c6370"
 
-decl -hidden str cursoralpha "80"
-decl -hidden str selectionalpha "40"
+decl str cursoralpha "80"
+decl str selectionalpha "40"
 
 # Menus do not support transparency, so we must hardcode the selection + sub bg colors
-decl -hidden str menuselection "405770"
+decl str menuselection "405770"
 
 # CODE
 

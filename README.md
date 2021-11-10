@@ -4,7 +4,7 @@
 
 Includes an additional `One Darker` colorscheme, which is a personalized flavor of `One Dark` with readability improvements and some syntax changes.
 
-Includes optional faces for colored curly underlines. This features requires building kakoune manually, as there is not yet an official release supporting this feature. This feature may not work on all terminal emulators.
+Includes optional faces for colored curly underlines. This features requires Kakoune 2021.10.28 or newer. This feature may not work on all terminal emulators.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Enable the desired colorscheme using the `colorscheme` command in your `kakrc`:
 
 ```kakounescript
 colorscheme one-darker
-# If you have built kakoune from git, and have a compatible terminal emulator:
+# Requires kakoune 2021.10.28 or newer, and a compatible terminal emulator:
 one-enable-fancy-underlines
 ```
 
@@ -42,7 +42,7 @@ Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
         - Error: red
         - Warning: yellow
         - Info: blue
-        - Hint: cyan
+        - Hint: grey
     - If `one-enable-fancy-underlines` are enabled, diagnostics are underlined in their respective colors using curly underlines
     - Other references to the current symbol are highlighted in a slightly lighter background color
 - [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)

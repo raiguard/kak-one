@@ -45,8 +45,6 @@ Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
         - Hint: grey
     - If `one-enable-fancy-underlines` are enabled, diagnostics are underlined in their respective colors using curly underlines
     - Other references to the current symbol are highlighted in a slightly lighter background color
-- [kakoune-phantom-selection](https://github.com/occivink/kakoune-phantom-selection)
-    - Phantom selections are highlighted magenta and italicized
 - [kak-rainbower](https://github.com/crizan/kak-rainbower)
     - Brackets are colored gold, magenta, and light blue
     - `one-light` has darker variations of these colors to improve visibility
@@ -120,10 +118,6 @@ Changes in `One Darker` over `One Dark` are:
 ### Obvious secondary selections
 
 ![](screenshots/secondary-selections.png)
-
-### [Phantom selections](https://github.com/raiguard/phantom.kak)
-
-![](screenshots/phantom-selections.png)
 
 ### kak-lsp diagnostics
 

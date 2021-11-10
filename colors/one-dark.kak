@@ -115,8 +115,5 @@ face global InfoDiagnosticHint InlayDiagnosticHint
 face global InfoDiagnosticInformation InlayDiagnosticInfo
 face global InfoDiagnosticWarning InlayDiagnosticWarning
 
-# phantom.kak
-face global Phantom "default,rgba:%opt{magenta}%opt{selectionalpha}"
-
 # kak-rainbower
 try %{ set global rainbow_colors "rgb:ffd700" "rgb:da70d6" "rgb:87cefa" }

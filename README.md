@@ -1,5 +1,9 @@
 # one.kak
 
+![](screenshots/one-light.png)
+![](screenshots/one-dark.png)
+![](screenshots/one-darker.png)
+
 `One Light` and `One Dark` colorschemes for [Kakoune](https://kakoune.org). Based on [vim-one](https://github.com/rakr/vim-one).
 
 Includes an additional `One Darker` colorscheme, which is a personalized flavor of `One Dark` with readability improvements and some syntax changes.
@@ -10,7 +14,7 @@ Includes optional faces for colored curly underlines. This features requires Kak
 
 With [plug.kak](https://github.com/andreyorst/plug.kak):
 
-```kakounescript
+```kak
 plug "raiguard/one.kak" theme
 ```
 
@@ -20,13 +24,20 @@ You can also manually put the colorscheme file(s) in your `.config/kak/colors` d
 
 Enable the desired colorscheme using the `colorscheme` command in your `kakrc`:
 
-```kakounescript
+```kak
 colorscheme one-darker
 # Requires kakoune 2021.10.28 or newer, and a compatible terminal emulator:
 one-enable-fancy-underlines
 ```
 
 Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
+
+Changes in `One Darker` over `One Dark` are:
+
+- Darker background color
+- Variables are white instead of red
+- Operators are red instead of white
+- Comments are more visible
 
 ## Plugin support
 
@@ -53,8 +64,8 @@ Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
 
 You can use the scheme colors and other properties in your own scripts by using the following options in expansions:
 
-```kakounescript
-addhl global/trailing-whitespaces regex "(\h+)$" "1:default,rgba:%opt{darkred}%opt{selectionalpha}"
+```kak
+add-highlighter global/trailing-whitespaces regex "(\h+)$" "1:default,rgba:%opt{darkred}%opt{selectionalpha}"
 ```
 
 ### Colors
@@ -83,31 +94,6 @@ addhl global/trailing-whitespaces regex "(\h+)$" "1:default,rgba:%opt{darkred}%o
 ### Other
 
 - `menuselection` (cursor color adjusted for ths `subbg` background, since menus do not support transparency)
-
-## Scheme screenshots
-
-These screenshots include a number of custom semantic highlighting settings, see [my kak-lsp.toml](https://github.com/raiguard/dotfiles/blob/master/.config/kak-lsp/kak-lsp.toml).
-
-These screenshots also include the [kak-rainbower](https://github.com/crizan/kak-rainbower) plugin.
-
-### One Light
-
-![](screenshots/one-light.png)
-
-### One Dark
-
-![](screenshots/one-dark.png)
-
-### One Darker
-
-![](screenshots/one-darker.png)
-
-Changes in `One Darker` over `One Dark` are:
-
-- Darker background color
-- Variables are white instead of red
-- Operators are red instead of white
-- Comments are more visible
 
 ## Feature screenshots
 

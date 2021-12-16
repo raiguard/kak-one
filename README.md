@@ -1,8 +1,8 @@
 # one.kak
 
-![](screenshots/one-light.png)
-![](screenshots/one-dark.png)
 ![](screenshots/one-darker.png)
+![](screenshots/one-dark.png)
+![](screenshots/one-light.png)
 
 `One Light` and `One Dark` colorschemes for [Kakoune](https://kakoune.org). Based on [vim-one](https://github.com/rakr/vim-one).
 

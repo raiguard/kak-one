@@ -53,7 +53,7 @@ Changes in `One Darker` over `One Dark` are:
         - Error: red
         - Warning: yellow
         - Info: blue
-        - Hint: grey
+        - Hint: bright white / dark black (in dark and light themes respectively)
     - If `one-enable-fancy-underlines` are enabled, diagnostics are underlined in their respective colors using curly underlines
     - Other references to the current symbol are highlighted in a slightly lighter background color
 - [kak-rainbower](https://github.com/crizan/kak-rainbower)

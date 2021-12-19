@@ -15,6 +15,7 @@ decl str cyan "56b6c2"
 
 decl str gutter "636d83"
 decl str comment "5c6370"
+decl str hint "ffffff"
 
 decl str cursoralpha "80"
 decl str selectionalpha "40"
@@ -84,11 +85,11 @@ face global enum "rgb:%opt{cyan}"
 face global InlayDiagnosticError "rgb:%opt{lightred}"
 face global InlayDiagnosticWarning "rgb:%opt{lightorange}"
 face global InlayDiagnosticInfo "rgb:%opt{blue}"
-face global InlayDiagnosticHint "rgb:%opt{comment}"
+face global InlayDiagnosticHint "rgb:%opt{hint}"
 face global LineFlagError "rgb:%opt{lightred}"
 face global LineFlagWarning "rgb:%opt{lightorange}"
 face global LineFlagInfo "rgb:%opt{blue}"
-face global LineFlagHint "rgb:%opt{comment}"
+face global LineFlagHint "rgb:%opt{hint}"
 # Not all terminals support curly underlines, so use regular ones by default
 face global DiagnosticError "default+u"
 face global DiagnosticWarning "default+u"
@@ -98,7 +99,7 @@ def -override one-enable-fancy-underlines %{
     face global DiagnosticError ",,rgb:%opt{lightred}+c"
     face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
     face global DiagnosticInfo ",,rgb:%opt{blue}+c"
-    face global DiagnosticHint ",,rgb:%opt{comment}+u"
+    face global DiagnosticHint ",,rgb:%opt{hint}+u"
 }
 # Infobox faces
 face global InfoDefault Information

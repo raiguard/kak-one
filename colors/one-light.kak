@@ -13,7 +13,6 @@ decl str blue "4078f2"
 decl str magenta "a626a4"
 decl str cyan "0184bc"
 
-decl str gutter "9e9e9e"
 decl str comment "a0a1a7"
 decl str hint "000000"
 
@@ -58,7 +57,7 @@ face global PrimaryCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
 face global SecondaryCursor "default,rgba:%opt{green}%opt{cursoralpha}"
 face global PrimaryCursorEol "default,rgba:%opt{lightred}%opt{cursoralpha}"
 face global SecondaryCursorEol "default,rgba:%opt{darkorange}%opt{cursoralpha}"
-face global LineNumbers "rgb:%opt{gutter}"
+face global LineNumbers "rgb:%opt{comment}"
 face global LineNumberCursor "rgb:%opt{darkorange}"
 face global LineNumbersWrapped "rgb:%opt{bg},rgb:%opt{bg}"
 face global MenuForeground "rgb:%opt{fg},rgb:%opt{menuselection}"
@@ -74,7 +73,7 @@ face global StatusCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
 face global Prompt "rgb:%opt{blue}"
 face global MatchingChar "default,rgb:%opt{subbg}"
 face global BufferPadding "rgb:%opt{bg},rgb:%opt{bg}"
-face global Whitespace "rgb:%opt{gutter}"
+face global Whitespace "rgb:%opt{comment}"
 
 # PLUGINS
 

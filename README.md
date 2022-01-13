@@ -83,7 +83,6 @@ add-highlighter global/trailing-whitespaces regex "(\h+)$" "1:default,rgba:%opt{
 - `magenta`
 - `cyan`
 
-- `gutter`
 - `comment`
 
 ### Transparencies

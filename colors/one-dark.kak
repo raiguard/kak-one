@@ -1,119 +1,119 @@
 # One Dark
 
-decl str fg "abb2bf"
-decl str bg "282c34"
-decl str subbg "373c47"
+declare-option str fg "abb2bf"
+declare-option str bg "282c34"
+declare-option str subbg "373c47"
 
-decl str lightred "e06c75"
-decl str darkred "be5046"
-decl str green "98c379"
-decl str lightorange "e5c07b"
-decl str darkorange "d19a66"
-decl str blue "61afef"
-decl str magenta "c678dd"
-decl str cyan "56b6c2"
+declare-option str lightred "e06c75"
+declare-option str darkred "be5046"
+declare-option str green "98c379"
+declare-option str lightorange "e5c07b"
+declare-option str darkorange "d19a66"
+declare-option str blue "61afef"
+declare-option str magenta "c678dd"
+declare-option str cyan "56b6c2"
 
-decl str comment "5c6370"
-decl str hint "ffffff"
+declare-option str comment "5c6370"
+declare-option str hint "ffffff"
 
-decl str cursoralpha "80"
-decl str selectionalpha "40"
+declare-option str cursoralpha "80"
+declare-option str selectionalpha "40"
 
 # Menus do not support transparency, so we must hardcode the selection + sub bg colors
-decl str menuselection "405770"
+declare-option str menuselection "405770"
 
 # CODE
 
-face global value "rgb:%opt{darkorange}"
-face global type "rgb:%opt{lightorange}"
-face global variable "rgb:%opt{lightred}"
-face global module "rgb:%opt{lightorange}"
-face global function "rgb:%opt{blue}"
-face global string "rgb:%opt{green}"
-face global keyword "rgb:%opt{magenta}"
-face global operator "rgb:%opt{fg}"
-face global attribute "rgb:%opt{magenta}"
-face global comment "rgb:%opt{comment}"
-face global documentation "rgb:%opt{comment}"
-face global meta "rgb:%opt{fg}"
-face global builtin "rgb:%opt{lightorange}"
+set-face global value "rgb:%opt{darkorange}"
+set-face global type "rgb:%opt{lightorange}"
+set-face global variable "rgb:%opt{lightred}"
+set-face global module "rgb:%opt{lightorange}"
+set-face global function "rgb:%opt{blue}"
+set-face global string "rgb:%opt{green}"
+set-face global keyword "rgb:%opt{magenta}"
+set-face global operator "rgb:%opt{fg}"
+set-face global attribute "rgb:%opt{magenta}"
+set-face global comment "rgb:%opt{comment}"
+set-face global documentation "rgb:%opt{comment}"
+set-face global meta "rgb:%opt{fg}"
+set-face global builtin "rgb:%opt{lightorange}"
 
 # MARKUP
 
-face global title "rgb:%opt{darkorange}"
-face global header "rgb:%opt{green}"
-face global mono "rgb:%opt{cyan}"
-face global block "rgb:%opt{magenta}"
-face global link "rgb:%opt{blue}"
-face global bullet "rgb:%opt{lightorange}"
-face global list "rgb:%opt{fg}"
+set-face global title "rgb:%opt{darkorange}"
+set-face global header "rgb:%opt{green}"
+set-face global mono "rgb:%opt{cyan}"
+set-face global block "rgb:%opt{magenta}"
+set-face global link "rgb:%opt{blue}"
+set-face global bullet "rgb:%opt{lightorange}"
+set-face global list "rgb:%opt{fg}"
 
 # BUILTIN
 
-face global Default "rgb:%opt{fg},rgb:%opt{bg}"
-face global PrimarySelection "default,rgba:%opt{blue}%opt{selectionalpha}"
-face global SecondarySelection "default,rgba:%opt{green}%opt{selectionalpha}"
-face global PrimaryCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
-face global SecondaryCursor "default,rgba:%opt{green}%opt{cursoralpha}"
-face global PrimaryCursorEol "default,rgba:%opt{lightred}%opt{cursoralpha}"
-face global SecondaryCursorEol "default,rgba:%opt{darkorange}%opt{cursoralpha}"
-face global LineNumbers "rgb:%opt{comment}"
-face global LineNumberCursor "rgb:%opt{darkorange}"
-face global LineNumbersWrapped "rgb:%opt{bg},rgb:%opt{bg}"
-face global MenuForeground "rgb:%opt{fg},rgb:%opt{menuselection}"
-face global MenuBackground "rgb:%opt{fg},rgb:%opt{subbg}"
-face global MenuInfo "rgb:%opt{green}"
-face global Information "rgb:%opt{fg},rgb:%opt{subbg}"
-face global Error "rgb:%opt{lightred}"
-face global StatusLine "rgb:%opt{fg},rgb:%opt{subbg}"
-face global StatusLineMode "rgb:%opt{darkorange}"
-face global StatusLineInfo "rgb:%opt{blue}"
-face global StatusLineValue "rgb:%opt{fg}"
-face global StatusCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
-face global Prompt "rgb:%opt{blue}"
-face global MatchingChar "default,rgb:%opt{subbg}"
-face global BufferPadding "rgb:%opt{bg},rgb:%opt{bg}"
-face global Whitespace "rgb:%opt{comment}"
+set-face global Default "rgb:%opt{fg},rgb:%opt{bg}"
+set-face global PrimarySelection "default,rgba:%opt{blue}%opt{selectionalpha}"
+set-face global SecondarySelection "default,rgba:%opt{green}%opt{selectionalpha}"
+set-face global PrimaryCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
+set-face global SecondaryCursor "default,rgba:%opt{green}%opt{cursoralpha}"
+set-face global PrimaryCursorEol "default,rgba:%opt{lightred}%opt{cursoralpha}"
+set-face global SecondaryCursorEol "default,rgba:%opt{darkorange}%opt{cursoralpha}"
+set-face global LineNumbers "rgb:%opt{comment}"
+set-face global LineNumberCursor "rgb:%opt{darkorange}"
+set-face global LineNumbersWrapped "rgb:%opt{bg},rgb:%opt{bg}"
+set-face global MenuForeground "rgb:%opt{fg},rgb:%opt{menuselection}"
+set-face global MenuBackground "rgb:%opt{fg},rgb:%opt{subbg}"
+set-face global MenuInfo "rgb:%opt{green}"
+set-face global Information "rgb:%opt{fg},rgb:%opt{subbg}"
+set-face global Error "rgb:%opt{lightred}"
+set-face global StatusLine "rgb:%opt{fg},rgb:%opt{subbg}"
+set-face global StatusLineMode "rgb:%opt{darkorange}"
+set-face global StatusLineInfo "rgb:%opt{blue}"
+set-face global StatusLineValue "rgb:%opt{fg}"
+set-face global StatusCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
+set-face global Prompt "rgb:%opt{blue}"
+set-face global MatchingChar "default,rgb:%opt{subbg}"
+set-face global BufferPadding "rgb:%opt{bg},rgb:%opt{bg}"
+set-face global Whitespace "rgb:%opt{comment}"
 
 # PLUGINS
 
 # kak-lsp
-face global InlayHint "rgb:%opt{comment}"
-face global parameter "rgb:%opt{lightred}+i"
-face global enum "rgb:%opt{cyan}"
-face global InlayDiagnosticError "rgb:%opt{lightred}"
-face global InlayDiagnosticWarning "rgb:%opt{lightorange}"
-face global InlayDiagnosticInfo "rgb:%opt{blue}"
-face global InlayDiagnosticHint "rgb:%opt{hint}"
-face global LineFlagError "rgb:%opt{lightred}"
-face global LineFlagWarning "rgb:%opt{lightorange}"
-face global LineFlagInfo "rgb:%opt{blue}"
-face global LineFlagHint "rgb:%opt{hint}"
+set-face global InlayHint "rgb:%opt{comment}"
+set-face global parameter "rgb:%opt{lightred}+i"
+set-face global enum "rgb:%opt{cyan}"
+set-face global InlayDiagnosticError "rgb:%opt{lightred}"
+set-face global InlayDiagnosticWarning "rgb:%opt{lightorange}"
+set-face global InlayDiagnosticInfo "rgb:%opt{blue}"
+set-face global InlayDiagnosticHint "rgb:%opt{hint}"
+set-face global LineFlagError "rgb:%opt{lightred}"
+set-face global LineFlagWarning "rgb:%opt{lightorange}"
+set-face global LineFlagInfo "rgb:%opt{blue}"
+set-face global LineFlagHint "rgb:%opt{hint}"
 # Not all terminals support curly underlines, so use regular ones by default
-face global DiagnosticError "default+u"
-face global DiagnosticWarning "default+u"
-face global DiagnosticInfo "default+u"
-face global DiagnosticHint "default+u"
-def -override one-enable-fancy-underlines %{
-    face global DiagnosticError ",,rgb:%opt{lightred}+c"
-    face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
-    face global DiagnosticInfo ",,rgb:%opt{blue}+c"
-    face global DiagnosticHint ",,rgb:%opt{hint}+u"
+set-face global DiagnosticError "default+u"
+set-face global DiagnosticWarning "default+u"
+set-face global DiagnosticInfo "default+u"
+set-face global DiagnosticHint "default+u"
+define-command -override one-enable-fancy-underlines %{
+    set-face global DiagnosticError ",,rgb:%opt{lightred}+c"
+    set-face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
+    set-face global DiagnosticInfo ",,rgb:%opt{blue}+c"
+    set-face global DiagnosticHint ",,rgb:%opt{hint}+u"
 }
 # Infobox faces
-face global InfoDefault Information
-face global InfoBlock block
-face global InfoBlockQuote block
-face global InfoBullet bullet
-face global InfoHeader header
-face global InfoLink link
-face global InfoLinkMono header
-face global InfoMono mono
-face global InfoRule comment
-face global InfoDiagnosticError InlayDiagnosticError
-face global InfoDiagnosticHint InlayDiagnosticHint
-face global InfoDiagnosticInformation InlayDiagnosticInfo
-face global InfoDiagnosticWarning InlayDiagnosticWarning
+set-face global InfoDefault Information
+set-face global InfoBlock block
+set-face global InfoBlockQuote block
+set-face global InfoBullet bullet
+set-face global InfoHeader header
+set-face global InfoLink link
+set-face global InfoLinkMono header
+set-face global InfoMono mono
+set-face global InfoRule comment
+set-face global InfoDiagnosticError InlayDiagnosticError
+set-face global InfoDiagnosticHint InlayDiagnosticHint
+set-face global InfoDiagnosticInformation InlayDiagnosticInfo
+set-face global InfoDiagnosticWarning InlayDiagnosticWarning
 
 # kak-rainbower
-try %{ set global rainbow_colors "rgb:ffd700" "rgb:da70d6" "rgb:87cefa" }
+try %{ set-option global rainbow_colors "rgb:ffd700" "rgb:da70d6" "rgb:87cefa" }

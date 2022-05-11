@@ -124,4 +124,4 @@ set-face global InfoDiagnosticInformation InlayDiagnosticInfo
 set-face global InfoDiagnosticWarning InlayDiagnosticWarning
 
 # kak-rainbower
-try %{ set-option global rainbow_colors "rgb:ffd700" "rgb:da70d6" "rgb:87cefa" }
+try %{ set-option global rainbow_colors "rgb:%opt{lightorange}" "rgb:%opt{magenta}" "rgb:%opt{blue}" }

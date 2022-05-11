@@ -57,8 +57,7 @@ Changes in `One Darker` over `One Dark` are:
     - If `one-enable-fancy-underlines` are enabled, diagnostics are underlined in their respective colors using curly underlines
     - Other references to the current symbol are highlighted in a slightly lighter background color
 - [kak-rainbower](https://github.com/crizan/kak-rainbower)
-    - Brackets are colored gold, magenta, and light blue
-    - `one-light` has darker variations of these colors to improve visibility
+    - Brackets are colored yellow, magenta, and blue
 
 ## Using scheme constructs in your own scripts
 

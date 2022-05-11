@@ -87,7 +87,7 @@ set-face global Whitespace "rgb:%opt{comment}"
 
 # kak-lsp
 set-face global InlayHint "rgb:%opt{comment}"
-set-face global parameter "rgb:%opt{fg}+i"
+set-face global parameter "+i@variable"
 set-face global enum "rgb:%opt{cyan}"
 set-face global InlayDiagnosticError "rgb:%opt{lightred}"
 set-face global InlayDiagnosticWarning "rgb:%opt{lightorange}"

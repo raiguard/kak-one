@@ -45,10 +45,10 @@ Changes in `One Darker` over `One Dark` are:
 
 - [kak-lsp](https://github.com/kak-lsp/kak-lsp)
     - LSP info boxes are syntax highlighted
-    - Inlay hints are colored as comments
+    - Inlay hints inherit from the `type` face, with a dim modifier
     - Special `enum` and `parameter` faces are provided for semantic highlighting (requires configuration in `kak-lsp.toml`)
         - `enum` is cyan
-        - `parameter` is italicized
+        - `parameter` is italicized and uses the `variable` color
     - Diagnostics are underlined, inlay diagnostics and diagnostic line flags are colored as thus:
         - Error: red
         - Warning: yellow

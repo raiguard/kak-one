@@ -78,7 +78,7 @@ set-face global Whitespace "rgb:%opt{comment}"
 # PLUGINS
 
 # kak-lsp
-set-face global InlayHint "rgb:%opt{comment}"
+set-face global InlayHint "+d@type"
 set-face global parameter "+i@variable"
 set-face global enum "rgb:%opt{cyan}"
 set-face global InlayDiagnosticError "rgb:%opt{lightred}"

@@ -15,7 +15,7 @@ Includes optional faces for colored curly underlines. This features requires Kak
 With [plug.kak](https://github.com/andreyorst/plug.kak):
 
 ```kak
-plug "raiguard/one.kak" theme
+plug "https://git.sr.ht/~raiguard/one.kak" theme
 ```
 
 You can also manually put the colorscheme file(s) in your `.config/kak/colors` directory.

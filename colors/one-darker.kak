@@ -43,7 +43,7 @@ set-face global operator "rgb:%opt{lightred}"
 set-face global attribute "rgb:%opt{magenta}"
 set-face global comment "rgb:%opt{comment}"
 set-face global documentation "rgb:%opt{comment}"
-set-face global meta "rgb:%opt{fg}"
+set-face global meta "rgb:%opt{magenta}"
 set-face global builtin "rgb:%opt{lightorange}"
 
 # MARKUP

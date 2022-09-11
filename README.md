@@ -1,4 +1,4 @@
-# one.kak
+# kak-one
 
 ![](screenshots/one-darker.png)
 ![](screenshots/one-dark.png)
@@ -15,7 +15,7 @@ Includes optional faces for colored curly underlines. This features requires Kak
 With [plug.kak](https://github.com/andreyorst/plug.kak):
 
 ```kak
-plug "https://git.sr.ht/~raiguard/one.kak" theme
+plug "https://git.sr.ht/~raiguard/kak-one" theme
 ```
 
 You can also manually put the colorscheme file(s) in your `.config/kak/colors` directory.
@@ -41,7 +41,7 @@ Changes in `One Darker` over `One Dark` are:
 
 ## Plugin support
 
-`one.kak` includes colors for the following plugins:
+`kak-one` includes colors for the following plugins:
 
 - [kak-lsp](https://github.com/kak-lsp/kak-lsp)
     - LSP info boxes are syntax highlighted

@@ -8,8 +8,6 @@
 
 Includes an additional `One Darker` colorscheme, which is a personalized flavor of `One Dark` with readability improvements and some syntax changes.
 
-Includes optional faces for colored curly underlines. This features requires Kakoune 2021.10.28 or newer. This feature may not work on all terminal emulators.
-
 ## Installation
 
 With [plug.kak](https://github.com/andreyorst/plug.kak):
@@ -26,8 +24,6 @@ Enable the desired colorscheme using the `colorscheme` command in your `kakrc`:
 
 ```kak
 colorscheme one-darker
-# Requires kakoune 2021.10.28 or newer, and a compatible terminal emulator:
-one-enable-fancy-underlines
 ```
 
 Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
@@ -49,12 +45,12 @@ Changes in `One Darker` over `One Dark` are:
     - Special `enum` and `parameter` faces are provided for semantic highlighting (requires configuration in `kak-lsp.toml`)
         - `enum` is cyan
         - `parameter` is italicized and uses the `variable` color
-    - Diagnostics are underlined, inlay diagnostics and diagnostic line flags are colored as thus:
+    - LSP diagnostics are colored as:
         - Error: red
         - Warning: yellow
         - Info: blue
         - Hint: bright white / dark black (in dark and light themes respectively)
-    - If `one-enable-fancy-underlines` are enabled, diagnostics are underlined in their respective colors using curly underlines
+    - Inline diagnostics are represented with colored curly underlines - this feature may not work on all terminal emulators
     - Other references to the current symbol are highlighted in a slightly lighter background color
 - [kak-rainbower](https://github.com/crizan/kak-rainbower)
     - Brackets are colored yellow, magenta, and blue

@@ -97,17 +97,10 @@ set-face global LineFlagError "rgb:%opt{lightred}"
 set-face global LineFlagWarning "rgb:%opt{lightorange}"
 set-face global LineFlagInfo "rgb:%opt{blue}"
 set-face global LineFlagHint "rgb:%opt{hint}"
-# Not all terminals support curly underlines, so use regular ones by default
-set-face global DiagnosticError "default+u"
-set-face global DiagnosticWarning "default+u"
-set-face global DiagnosticInfo "default+u"
-set-face global DiagnosticHint "default+u"
-define-command -override one-enable-fancy-underlines %{
-    set-face global DiagnosticError ",,rgb:%opt{lightred}+c"
-    set-face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
-    set-face global DiagnosticInfo ",,rgb:%opt{blue}+c"
-    set-face global DiagnosticHint ",,rgb:%opt{hint}+u"
-}
+set-face global DiagnosticError ",,rgb:%opt{lightred}+c"
+set-face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
+set-face global DiagnosticInfo ",,rgb:%opt{blue}+c"
+set-face global DiagnosticHint ",,rgb:%opt{hint}+u"
 # Infobox faces
 set-face global InfoDefault Information
 set-face global InfoBlock block
@@ -125,3 +118,8 @@ set-face global InfoDiagnosticWarning InlayDiagnosticWarning
 
 # kak-rainbower
 try %{ set-option global rainbow_colors "rgb:%opt{lightorange}" "rgb:%opt{magenta}" "rgb:%opt{blue}" }
+
+# For backwards compatibility
+define-command -hidden one-enable-fancy-underlines %{
+    echo -debug "one-enable-fancy-underlines is deprecated - curly underlines are enabled by default"
+}

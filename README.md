@@ -103,4 +103,4 @@ add-highlighter global/trailing-whitespaces regex "(\h+)$" "1:default,rgba:%opt{
 
 ![](screenshots/kak-lsp.png)
 
-To enable curly underlines, invoke the `one-enable-fancy-underlines` command after enabling the colorscheme. Please note that this will not work on all terminal emulators.
+Curly and/or colored underlines may not display on all terminal emulators.

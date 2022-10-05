@@ -112,6 +112,6 @@ set-face global InfoDiagnosticWarning InlayDiagnosticWarning
 try %{ set-option global rainbow_colors "rgb:%opt{lightorange}" "rgb:%opt{magenta}" "rgb:%opt{blue}" }
 
 # For backwards compatibility
-define-command -hidden one-enable-fancy-underlines %{
+define-command -override -hidden one-enable-fancy-underlines %{
     echo -debug "one-enable-fancy-underlines is deprecated - curly underlines are enabled by default"
 }

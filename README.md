@@ -35,6 +35,14 @@ Changes in `One Darker` over `One Dark` are:
 - Operators are red instead of white
 - Comments are more visible
 
+## 16-color variants
+
+There is a 16-color variant of each theme available, for use in a TTY. Note that you will need to set your terminal colors accordingly.
+
+Color option expansions are not available in 16-color variants - use the ANSI color names instead.
+
+`one-light-16`, `one-dark-16`, `one-darker-16`
+
 ## Plugin support
 
 `kak-one` includes colors for the following plugins:

@@ -1,6 +1,6 @@
 # CODE
 
-set-face global value yellow
+set-face global value bright-yellow
 set-face global type yellow
 set-face global variable white
 set-face global module yellow
@@ -9,8 +9,8 @@ set-face global string green
 set-face global keyword magenta
 set-face global operator red
 set-face global attribute cyan
-set-face global comment white+d
-set-face global documentation white+d
+set-face global comment bright-black
+set-face global documentation bright-black
 set-face global meta cyan
 set-face global builtin yellow
 
@@ -21,7 +21,7 @@ set-face global header green
 set-face global mono cyan
 set-face global block magenta
 set-face global link blue
-set-face global bullet yellow
+set-face global bullet bright-yellow
 set-face global list white
 
 # BUILTIN
@@ -33,8 +33,8 @@ set-face global PrimaryCursor black,white
 set-face global SecondaryCursor black,cyan
 set-face global PrimaryCursorEol black,red
 set-face global SecondaryCursorEol black,red
-set-face global LineNumbers white
-set-face global LineNumberCursor yellow
+set-face global LineNumbers comment
+set-face global LineNumberCursor value
 set-face global LineNumbersWrapped black
 set-face global MenuForeground blue
 set-face global MenuBackground default
@@ -42,14 +42,14 @@ set-face global MenuInfo green
 set-face global Information default
 set-face global Error red
 set-face global StatusLine default
-set-face global StatusLineMode yellow
+set-face global StatusLineMode bright-yellow
 set-face global StatusLineInfo blue
 set-face global StatusLineValue white
 set-face global StatusCursor black,blue
 set-face global Prompt blue
 set-face global MatchingChar +bu
 set-face global BufferPadding black
-set-face global Whitespace white+d
+set-face global Whitespace comment
 
 # PLUGINS
 
@@ -65,10 +65,10 @@ set-face global LineFlagError red
 set-face global LineFlagWarning yellow
 set-face global LineFlagInfo blue
 set-face global LineFlagHint white
-set-face global DiagnosticError +u
-set-face global DiagnosticWarning +u
-set-face global DiagnosticInfo +u
-set-face global DiagnosticHint +u
+set-face global DiagnosticError ,,red+c
+set-face global DiagnosticWarning ,,yellow+c
+set-face global DiagnosticInfo ,,blue+c
+set-face global DiagnosticHint ,,bright-white+u
 # Infobox faces
 set-face global InfoDefault Information
 set-face global InfoBlock block

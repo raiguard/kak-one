@@ -4,44 +4,66 @@
 ![](screenshots/one-dark.png)
 ![](screenshots/one-light.png)
 
-`One Light` and `One Dark` colorschemes for [Kakoune](https://kakoune.org). Based on [vim-one](https://github.com/rakr/vim-one).
-
-Includes an additional `One Darker` colorscheme, which is a personalized flavor of `One Dark` with readability improvements and some syntax changes.
+`One Light` and `One Dark` colorschemes for [Kakoune](https://kakoune.org).
+Based on [vim-one](https://github.com/rakr/vim-one).
+Includes an additional `One Darker` colorscheme, which has higher contrast than
+`One Dark` and the coloring of variables and operators is swapped.
 
 ## Installation
 
-With [plug.kak](https://github.com/andreyorst/plug.kak):
-
-```kak
-plug "https://git.sr.ht/~raiguard/kak-one" theme
-```
-
-You can also manually put the colorscheme file(s) in your `.config/kak/colors` directory.
+Install the files in the `colors` subdirectory in `(kak configuration)/colors`,
+or use a plugin manager.
 
 ## Usage
 
-Enable the desired colorscheme using the `colorscheme` command in your `kakrc`:
-
-```kak
-colorscheme one-darker
-```
-
-Provided are `one-light`, `one-dark`, and `one-darker` colorschemes.
-
-Changes in `One Darker` over `One Dark` are:
-
-- Darker background color
-- Variables are white instead of red
-- Operators are red instead of white
-- Comments are more visible
+Enable one of the themes with `colorscheme <name>`:
+- `one-light`, `one-light-16`
+- `one-dark`, `one-dark-16`
+- `one-darker`, `one-darker-16`
 
 ## 16-color variants
 
-There is a 16-color variant of each theme available, for use in a TTY. Note that you will need to set your terminal colors accordingly.
+There is a 16-color variant of each theme available that uses your base
+terminal colors. To achieve the correct theme, you will need to set your
+terminal colors accordingly.
 
-Color option expansions are not available in 16-color variants - use the ANSI color names instead.
+Color option expansions (explained below) are not available in 16-color
+variants - use the ANSI color names instead.
 
 `one-light-16`, `one-dark-16`, `one-darker-16`
+
+### [Foot](https://codeberg.org/dnkl/foot) color configuration for `one-darker-16`
+
+```ini
+[colors]
+foreground=abb2bf # white
+background=181a1f # black
+selection-foreground=181a1f # black
+selection-background=61afef # blue
+regular0=282c34 # black
+regular1=e06c75 # red
+regular2=98c379 # green
+regular3=e5c07b # yellow
+regular4=61afef # blue
+regular5=c678dd # magenta
+regular6=56b6c2 # cyan
+regular7=abb2bf # white
+bright0=70798a # bright black
+bright1=e06c75 # bright red
+bright2=98c379 # bright green
+bright3=d19a66 # bright yellow
+bright4=61afef # bright blue
+bright5=c678dd # bright magenta
+bright6=56b6c2 # bright cyan
+bright7=ffffff # bright white
+dim1=7c434a # dim red
+dim2=586e4c # dim green
+dim3=7e6d4d # dim yellow
+dim4=3c6487 # dim blue
+dim5=6f497e # dim magenta
+dim6=376870 # dim cyan
+dim7=70798a # dim white (comment color)
+```
 
 ## Plugin support
 

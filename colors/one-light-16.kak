@@ -60,15 +60,15 @@ set-face global enum cyan
 set-face global InlayDiagnosticError red
 set-face global InlayDiagnosticWarning yellow
 set-face global InlayDiagnosticInfo blue
-set-face global InlayDiagnosticHint white
+set-face global InlayDiagnosticHint green
 set-face global LineFlagError red
 set-face global LineFlagWarning yellow
 set-face global LineFlagInfo blue
-set-face global LineFlagHint white
+set-face global LineFlagHint green
 set-face global DiagnosticError ,,red+c
 set-face global DiagnosticWarning ,,yellow+c
 set-face global DiagnosticInfo ,,blue+c
-set-face global DiagnosticHint ,,bright-white+u
+set-face global DiagnosticHint ,,green+c
 # Infobox faces
 set-face global InfoDefault Information
 set-face global InfoBlock block

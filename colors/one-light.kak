@@ -14,7 +14,6 @@ declare-option str magenta "a626a4"
 declare-option str cyan "0184bc"
 
 declare-option str comment "a0a1a7"
-declare-option str hint "000000"
 
 declare-option str cursoralpha "80"
 declare-option str selectionalpha "40"
@@ -71,7 +70,7 @@ set-face global StatusLineInfo "rgb:%opt{blue}"
 set-face global StatusLineValue "rgb:%opt{fg}"
 set-face global StatusCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
 set-face global Prompt "rgb:%opt{blue}"
-set-face global MatchingChar "default,rgb:%opt{subbg}"
+set-face global MatchingChar +bu
 set-face global BufferPadding "rgb:%opt{bg},rgb:%opt{bg}"
 set-face global Whitespace "rgb:%opt{comment}"
 
@@ -84,15 +83,15 @@ set-face global enum "rgb:%opt{cyan}"
 set-face global InlayDiagnosticError "rgb:%opt{lightred}"
 set-face global InlayDiagnosticWarning "rgb:%opt{lightorange}"
 set-face global InlayDiagnosticInfo "rgb:%opt{blue}"
-set-face global InlayDiagnosticHint "rgb:%opt{hint}"
+set-face global InlayDiagnosticHint "rgb:%opt{green}"
 set-face global LineFlagError "rgb:%opt{lightred}"
 set-face global LineFlagWarning "rgb:%opt{lightorange}"
 set-face global LineFlagInfo "rgb:%opt{blue}"
-set-face global LineFlagHint "rgb:%opt{hint}"
+set-face global LineFlagHint "rgb:%opt{green}"
 set-face global DiagnosticError ",,rgb:%opt{lightred}+c"
 set-face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
 set-face global DiagnosticInfo ",,rgb:%opt{blue}+c"
-set-face global DiagnosticHint ",,rgb:%opt{hint}+u"
+set-face global DiagnosticHint ",,rgb:%opt{green}+c"
 # Infobox faces
 set-face global InfoDefault Information
 set-face global InfoBlock block

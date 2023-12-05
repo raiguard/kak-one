@@ -10,7 +10,7 @@
 
 declare-option str fg "abb2bf"
 declare-option str bg "181a1f"
-declare-option str subbg "272b33"
+declare-option str subbg "1f2229"
 
 declare-option str lightred "e06c75"
 declare-option str darkred "be5046"
@@ -22,13 +22,11 @@ declare-option str magenta "c678dd"
 declare-option str cyan "56b6c2"
 
 declare-option str comment "70798a"
-declare-option str hint "ffffff"
 
-declare-option str cursoralpha "80"
 declare-option str selectionalpha "40"
 
 # Menus do not support transparency, so we must hardcode the selection + sub bg colors
-declare-option str menuselection "344b61"
+declare-option str menuselection "2f455a"
 
 # CODE
 
@@ -61,10 +59,10 @@ set-face global list "rgb:%opt{fg}"
 set-face global Default "rgb:%opt{fg},rgb:%opt{bg}"
 set-face global PrimarySelection "default,rgba:%opt{blue}%opt{selectionalpha}"
 set-face global SecondarySelection "default,rgba:%opt{green}%opt{selectionalpha}"
-set-face global PrimaryCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
-set-face global SecondaryCursor "default,rgba:%opt{green}%opt{cursoralpha}"
-set-face global PrimaryCursorEol "default,rgba:%opt{lightred}%opt{cursoralpha}"
-set-face global SecondaryCursorEol "default,rgba:%opt{darkorange}%opt{cursoralpha}"
+set-face global PrimaryCursor "rgb:%opt{bg},rgb:%opt{blue}"
+set-face global SecondaryCursor "rgb:%opt{bg},rgb:%opt{green}"
+set-face global PrimaryCursorEol "rgb:%opt{bg},rgb:%opt{lightred}"
+set-face global SecondaryCursorEol "rgb:%opt{bg},rgb:%opt{cyan}"
 set-face global LineNumbers "rgb:%opt{comment}"
 set-face global LineNumberCursor "rgb:%opt{darkorange}"
 set-face global LineNumbersWrapped "rgb:%opt{bg},rgb:%opt{bg}"
@@ -77,9 +75,9 @@ set-face global StatusLine "rgb:%opt{fg},rgb:%opt{subbg}"
 set-face global StatusLineMode "rgb:%opt{darkorange}"
 set-face global StatusLineInfo "rgb:%opt{blue}"
 set-face global StatusLineValue "rgb:%opt{fg}"
-set-face global StatusCursor "default,rgba:%opt{blue}%opt{cursoralpha}"
+set-face global StatusCursor "rgb:%opt{bg},rgb:%opt{blue}"
 set-face global Prompt "rgb:%opt{blue}"
-set-face global MatchingChar "default,rgb:%opt{subbg}"
+set-face global MatchingChar +bu
 set-face global BufferPadding "rgb:%opt{bg},rgb:%opt{bg}"
 set-face global Whitespace "rgb:%opt{comment}"
 
@@ -92,15 +90,15 @@ set-face global enum "rgb:%opt{cyan}"
 set-face global InlayDiagnosticError "rgb:%opt{lightred}"
 set-face global InlayDiagnosticWarning "rgb:%opt{lightorange}"
 set-face global InlayDiagnosticInfo "rgb:%opt{blue}"
-set-face global InlayDiagnosticHint "rgb:%opt{hint}"
+set-face global InlayDiagnosticHint "rgb:%opt{green}"
 set-face global LineFlagError "rgb:%opt{lightred}"
 set-face global LineFlagWarning "rgb:%opt{lightorange}"
 set-face global LineFlagInfo "rgb:%opt{blue}"
-set-face global LineFlagHint "rgb:%opt{hint}"
+set-face global LineFlagHint "rgb:%opt{green}"
 set-face global DiagnosticError ",,rgb:%opt{lightred}+c"
 set-face global DiagnosticWarning ",,rgb:%opt{lightorange}+c"
 set-face global DiagnosticInfo ",,rgb:%opt{blue}+c"
-set-face global DiagnosticHint ",,rgb:%opt{hint}+u"
+set-face global DiagnosticHint ",,rgb:%opt{green}+c"
 # Infobox faces
 set-face global InfoDefault Information
 set-face global InfoBlock block

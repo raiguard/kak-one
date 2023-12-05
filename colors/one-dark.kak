@@ -15,7 +15,7 @@ declare-option str cyan "56b6c2"
 
 declare-option str comment "5c6370"
 
-declare-option str selectionalpha "40"
+declare-option str selectionalpha "35"
 
 # Menus do not support transparency, so we must hardcode the selection + sub bg colors
 declare-option str menuselection "405770"

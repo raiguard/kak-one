@@ -114,3 +114,8 @@ try %{ set-option global rainbow_colors "rgb:%opt{lightorange}" "rgb:%opt{magent
 define-command -override -hidden one-enable-fancy-underlines %{
     echo -debug "one-enable-fancy-underlines is deprecated - curly underlines are enabled by default"
 }
+
+hook -once global NormalIdle .* %{
+  echo -debug "WARNING: kak-one has moved to https://codeberg.org/raiguard/kak-one. Please update your plugin configuration."
+  echo -markup "{Error}WARNING:{default} kak-one has moved to https://codeberg.org/raiguard/kak-one. Please update your plugin configuration."
+}

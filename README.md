@@ -1,3 +1,5 @@
+# This project has migrated to [Codeberg](https://codeberg.org/raiguard/kak-one).
+
 # kak-one
 
 ![](screenshots/one-darker.png)

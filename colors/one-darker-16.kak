@@ -99,3 +99,8 @@ define-command -override -hidden one-enable-fancy-underlines %{
 # set-face global SecondaryCursor default,rgb:586e4c
 # set-face global PrimaryCursorEol default,rgb:7c434a
 # set-face global SecondaryCursorEol default,rgb:7c434a
+
+hook -once global NormalIdle .* %{
+  echo -debug "WARNING: kak-one has moved to https://codeberg.org/raiguard/kak-one. Please update your plugin configuration."
+  echo -markup "{Error}WARNING:{default} kak-one has moved to https://codeberg.org/raiguard/kak-one. Please update your plugin configuration."
+}
